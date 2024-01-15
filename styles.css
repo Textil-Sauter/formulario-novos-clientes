@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
+
+:root {
+    --nav-bg-color: rgba(0, 0, 0, 0.6);
+    --text-color: #fff;
+    --link-color: #9e86ff;
+    --btn-link-bg-color: #fff;
+    --btn-bg-color-gradient: linear-gradient(45deg, transparent 0%, #9b34ef 35%, #490cb0 65%, transparent 99%);
+    --btn-link-bg-color: #9e86ff;
+    --btn-link-color: #000;
+    --secondary-color: #ff00e5;
+    --tertiary-color: #3c0a6e;
+    --form-field-bg-color: rgba(0, 0, 0, 0.2);
+    --form-field-border: 1px solid rgba(255, 255, 255, 0.7);
+    --form-field-placeholder: rgba(255, 255, 255, 0.7);
+    --form-field-error: rgb(255, 76, 76);
+    --fot-bg-color: rgba(0, 0, 0, 0.65);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite alternate;
+    color: white;
+}
+
+header {
+    margin-top: 4.5em;
+    text-align: center;
+    padding: 0.8em;
+}
+
+.menu {
+    width: 100%;
+    padding: 12px 16px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--nav-bg-color);
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.menu__button {
+    /*background: var(--btn-bg-color-gradient);*/
+    padding: 5px 40px;
+    outline: 3px solid transparent;
+    transition: background 1s, outline 1s, transform 1s;
+    background-size: 250%;
+    border-radius: 500px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 4px;
+    color: var(--text-color);
+}
+
+.menu__button:hover {
+    /*background-color: var(--btn-link-bg-color);
+    color: var(--btn-link-color);*/
+    background-color: transparent;
+    background-position: 100%;
+    outline: 2px solid var(--secondary-color);
+    transform: scale(1.05);
+}
+
+#titulo {
+    text-transform: uppercase;
+}
+
+#subtitulo {
+    font-family: "Quicksand", sans-serif;
+    margin-top: 1em;
+}
+
+main {
+    width: 100%;
+}
+
+.container__form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container__field {
+    width: 100%;    
+    background: var(--form-field-bg-color);
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    gap: 20px;
+    padding: 40px;
+    margin-top: 30px;
+    border: none;
+    transition: transform 0.8s, background 0.8s, border 1s;
+}
+
+.container__field:hover {
+    transform: scale(1.05);
+    border: 2px solid var(--secondary-color);
+}
+
+.container__subtitle {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 8px;
+}
+
+.container__field--input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    background: var(--form-field-bg-color);
+    border: var(--form-field-border);
+    color: var(--text-color);
+    width: 100%;
+}
+
+#cep, #cep_entrega {
+    max-width: 130px;
+}
+
+.checksegmento {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input,
+select,
+textarea {
+    margin-top: 5px;
+}
+
+input:focus {
+    border: 3px solid violet;
+}
+
+textarea:focus {
+    border: 3px solid violet;
+}
+
+option{    
+    background-color: #0f0f10;
+    
+}
+.button {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.button__button {
+    padding: 16px 40px;
+    background-color: var(--tertiary-color);
+    border-radius: 500px;
+    font-weight: 700;
+    color: var(--text-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.button__button:hover {
+    background-color: transparent;
+    background-position: 100%;
+    outline: 2px solid var(--secondary-color);
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: background 1s, outline 1s, transform 1s;
+}
+
+.button__refresh {
+    color: var(--link-color);
+    margin-left: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.frete {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+footer {
+    margin-top: 15px;
+    height: 8vh;
+    width: 100%;
+    background: var(--fot-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="radio"]:checked+label {
+    color: #9e86ff;
+    font-weight: bold;
+}
+
+input{
+    accent-color: #56125b;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;    
+}
+
+/* scrollbar*/
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--tertiary-color);
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--link-color);
+  }
+/*animations gradient*/
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Media Queries*/
+
+@media screen and (max-width: 480px) {
+    * {
+        font-size: .98em;
+    }
+
+    header {
+        margin-top: 10rem;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: auto;
+        gap: 5px;
+        font-size: 0.7em;
+        text-align: center;
+    }
+
+    .menu__button {
+        background: var(--btn-bg-color-gradient);
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container__field:hover {
+        transform: none;
+        border: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container__field {
+        min-width: 700px;
+        max-width: 800px;
+    }
+}

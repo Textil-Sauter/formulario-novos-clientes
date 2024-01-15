@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Clientes Tx Sauter</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+    <div class="menu">
+        <nav>
+            <a href="http://www.sintegra.gov.br/" target="_blank" class="menu__button">Sintegra</a>
+            <a href="https://solucoes.receita.fazenda.gov.br/servicos/cnpjreva/cnpjreva_solicitacao.asp" target="_blank"
+                class="menu__button">Receita Federal</a>
+            <a href="https://www.google.com.br/maps/@-23.6847104,-46.4420864,13z?entry=ttu" target="_blank"
+                class="menu__button">Maps</a>
+            <a href="https://buscacepinter.correios.com.br/app/localidade_logradouro/index.php" target="_blank"
+                class="menu__button">Busca CEP</a>
+        </nav>
+    </div>
+    <header>
+        <h1 id="titulo">Bem vindo a área de cadastro de novos clientes!</h1>
+        <p id="subtitulo">Utilize os campos abaixo para cadastrar seu cliente e ótimas vendas!!</p>
+
+    </header>
+    <div class="container">
+        <main>
+            <div class="container__form">
+                <form action="https://formsubmit.co/filipe@textilsauter.com.br" method="post">
+                    <input type="hidden" name="_cc" value="aprendizsauter@gmail.com">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_next" value="https://filipe-bernardo.github.io/Formulario-Cadastro-Sauter/">                    
+                    <fieldset class="container__field">
+                        <legend class="container__subtitle"><strong>DADOS CADASTRAIS</strong></legend>
+                        <div class="campo">
+                            <label for="documento"><strong>CPF/CNPJ:</strong></label>
+                            <input class="container__field--input" type="text" name="documento" id="documento"
+                                placeholder="Somente Números">
+                        </div>
+                        <div class="campo">
+                            <label for="nome"><strong>Nome/Razão Social:</strong></label>
+                            <input class="container__field--input" type="text" name="nome" id="nome"
+                                placeholder="Nome ou razão social do cliente">
+                        </div>
+                        <div class="campo">
+                            <label for="nome_fantasia"><strong>Nome Fantasia:</strong></label>
+                            <input class="container__field--input" type="text" name="nome_fantasia" id="nome_fantasia"
+                                placeholder="Nome Fantasia do cliente caso houver">
+                        </div>
+                        <div class="campo">
+                            <div>
+                                <label for="cep"><strong>C.E.P.:</strong></label><br>
+                                <input class="container__field--input" type="text" name="cep" id="cep" value="" maxlength="8">
+                            </div><br>
+                            <label for="endereco"><strong>Logradouro:</strong></label>
+                            <input class="container__field--input" type="text" name="logradouro" id="logradouro"
+                                placeholder="Rua, avenida, rodovia..."><br><br>
+                            <label for="endereco"><strong>Complemento:</strong></label>
+                            <input class="container__field--input" type="text" name="complemento" id="complemento"
+                                placeholder="Casa, apto ..."><br><br>
+                            <label for="endereco"><strong>Bairro:</strong></label>
+                            <input class="container__field--input" type="text" name="bairro" id="bairro"
+                                placeholder="Bairro"><br><br>
+                            <label for="endereco"><strong>Cidade:</strong></label>
+                            <input class="container__field--input" type="text" name="localidade" id="localidade"
+                                placeholder="Cidade"><br><br>
+                            <label for="endereco"><strong>Estado:</strong></label>
+                            <input class="container__field--input" type="text" name="estado" id="estado"
+                                placeholder="Estado">
+                        </div>
+                        <div class="campo">
+                            <label for="contato"><strong>Nome de Contato:</strong></label>
+                            <input class="container__field--input" type="text" name="contato" id="contato"
+                                placeholder="Nome do comprador (cliente)">
+                            <br><br>
+                            <label for="telefone"><strong>Telefone:</strong></label>
+                            <input class="container__field--input" type="tel" name="telefone" id="telefone"
+                                placeholder="(xx) 99999-9999">
+                        </div>
+                        <div class="campo">
+                            <label for="ie"><strong>Inscrição Estadual:</strong></label>
+                            <input class="container__field--input" type="text" name="ie" id="ie"
+                                placeholder="somente números ou isento quando não houver">
+                        </div>
+                        <div class="campo">
+                            <label for="email"><strong>E-mail:</strong></label>
+                            <input class="container__field--input" type="email" name="email" id="email"
+                                placeholder="exemplo@exemplo.com">
+                        </div>
+                    </fieldset>
+                    <fieldset class="container__field">
+                        <legend class="container__subtitle"><strong>INFOS. COMPLEMENTARES</strong></legend>
+                        <div class="campo">
+                            <p><strong>Vincular o cadastro a outro cliente?</strong></p>
+                            <input type="radio" name="vincula_cadastro" id="vincula" value="vincula">
+                            <label for="sim_vincula">Sim</label>
+                            <input type="radio" name="vincula_cadastro" id="nao_vincula" value="nao_vincula">
+                            <label for="nao_vincula">Não</label>
+                            <br>
+                            <br>
+                            <label for="informe"><strong>Se Sim, informe o cadastro:</strong></label>
+                            <input class="container__field--input" type="text" name="vincula_cadastro" id="informe"
+                                placeholder="Número do cadastro ou razão social">
+                        </div>
+                        <div class="checksegmento">
+                            <p><strong>Selecione o segmento:</strong></p>
+                            <span>
+                                <input type="radio" name="segmento" id="pesca" value="pesca">
+                                <label for="pesca">Pesca:</label>
+                            </span>
+                            <span>
+                                <input type="radio" name="segmento" id="protecao" value="protecao">
+                                <label for="protecao">Proteção:</label>
+                            </span>
+                            <span>
+                                <input type="radio" name="segmento" id="piscicultura" value="piscicultura">
+                                <label for="piscicultura">Piscicultura:</label>
+                            </span>
+                            <span>
+                                <input type="radio" name="segmento" id="aviario" value="aviario">
+                                <label for="aviario">Aviário:</label>
+                            </span>
+                            <span>
+                                <input type="radio" name="segmento" id="construcao_civil" value="construcao_civil">
+                                <label for="construcao_civil">Construção Civil:</label>
+                            </span>
+                            <span>
+                                <input type="radio" name="segmento" id="agro" value="agro">
+                                <label for="agro">Agro:</label>
+                            </span>
+
+                        </div>
+                    </fieldset>
+                    <fieldset class="container__field">
+                        <legend class="container__subtitle"><strong>INFOS. DE VENDA E ENTREGA</strong></legend>
+                        <div class="campo">
+                            <label for="vendedor"><strong>Selecione o vendedor:</strong></label>
+                            <select class="container__field--input" name="vendedor" id="vendedor">
+                                <option selected disabled value="">Selecione</option>
+                                <option value="ana">Ana</option>
+                                <option value="direto">Direto</option>
+                                <option value="fernanda">Fernanda</option>
+                                <option value="jeniffer">Jeniffer</option>
+                                <option value="jessica">Jessica</option>
+                                <option value="renato">Libarino</option>
+                                <option value="maryha">Maryha</option>
+                                <option value="renata">Renata</option>
+                                <option value="anerão_32">A.C. Araujo (Anerão) - 32</option>
+                                <option value="alteixeira_62">A L Teixeira - 62</option>
+                                <option value="andre_48">Andre Luiz - 48</option>
+                                <option value="antonio_chagas_65">Antônio Chagas - 65</option>
+                                <option value="antonio_jose_20">Antônio José - 20</option>
+                                <option value="antonio_teixeira_19">Antônio Teixeira - 19</option>
+                                <option value="audrey_41">Audrey - 41</option>
+                                <option value="baser_37">Baser - 37</option>
+                                <option value="divino_56">Divino - 56</option>
+                                <option value="ebyster_46">Ebyster - 46</option>
+                                <option value="eduardo_63">Eduardo Santos - 63</option>
+                                <option value="erivaldo_45">Erivaldo - 45</option>
+                                <option value="estin_39">Estin - 39</option>
+                                <option value="felype_bandeira_43">Felype Bandeira - 43</option>
+                                <option value="flavio_26">Flavio de Oliveira - 26</option>
+                                <option value="francisco_sena_24">Francisco Sena - 24</option>
+                                <option value="fredson_61">Fredson - 61</option>
+                                <option value="guilherme_15">Guilherme - 15</option>
+                                <option value="itaipu_36">Itaipu (Paulo Barbosa) - 36</option>
+                                <option value="jackson_13">Jackson - 13</option>
+                                <option value="jose_carlos_6">José Carlos - 6</option>
+                                <option value="jose_ricardo_50">José Ricardo - 50</option>
+                                <option value="keidyson_1">Keidyson - 1</option>
+                                <option value="mario_8">Mario Com & Represent - 8</option>
+                                <option value="martins_almeida_29">Martins & Martins (Almeida) - 29</option>
+                                <option value="nilson_9">Nilson Franco - 9</option>
+                                <option value="odimar_soldera_10">Odimar Soldera - 10</option>
+                                <option value="rafael_23">Rafael Represent - 23</option>
+                                <option value="ramon_14">Ramon Coelho - 14</option>
+                                <option value="recom_2">Recom - 2</option>
+                                <option value="rep_pimenta_4">Rep. Pimenta (Alberto) - 4</option>
+                                <option value="roberson_53">Roberson - 53</option>
+                                <option value="ronaldo_pereira_55">Ronaldo Pereira - 55</option>
+                                <option value="s_passos_54">S Passos - 54</option>
+                                <option value="schilickmann_42">Schilickmann - 42</option>
+                                <option value="simoes_47">Simoes & Pontes - 47</option>
+                                <option value="toninho_18">Toninho - 18</option>
+                                <option value="univel_52">Univel Repr. - 52</option>
+                            </select>
+                        </div>
+                        <div class="campo">
+                            <label for="transportadora"><strong>Transportadora:</strong></label>
+                            <input class="container__field--input" type="text" name="transportadora" id="transportadora"
+                                placeholder="Razão social e/ou código da transportadora">
+                        </div>
+                        <div class="frete">
+                            <p><strong>Selecione o tipo de frete:</strong></p>
+                            <span>
+                                <input type="radio" name="frete" id="fob" value="fob">
+                                <label for="fob">FOB:</label>
+                            </span>
+                            <span>
+                                <input type="radio" name="frete" id="cif" value="cif">
+                                <label for="cif">CIF:</label>
+                            </span>
+                        </div>
+                        <div class="campo">
+                            <label for="cep_entrega"><strong>C.E.P. Entrega:</strong></label>
+                            <input class="container__field--input" type="text" name="cep_entrega" id="cep_entrega" maxlength="8"><br><br>
+                            <label for="endereco"><strong>Endereço de Entrega:</strong></label>
+                            <input class="container__field--input" type="text" name="endereco_entrega"
+                                id="endereco_entrega" placeholder="Rua/av, numero | Bairro| Cidade | Estado">
+                        </div>
+                        <div class="campo">
+                            <label for="limite"><strong>Limite de Crédito:</strong></label>
+                            <input class="container__field--input" type="number" name="limite" id="limite"
+                                placeholder="Valor da compra em reais">
+                        </div>
+                        <div class="campo">
+                            <label for="textarea"><strong>Observações:</strong></label>
+                            <textarea class="container__field--input" name="observações" id="textarea" cols="30"
+                                rows="5"
+                                placeholder="Escreva informações que ache relevante a esse cadastro, caso necessário"></textarea>
+                        </div>
+                    </fieldset>
+                    <div class="button">
+                        <button class="button__button" type="submit">Enviar</button>
+                        <button class="button__refresh" type="reset">Limpar dados</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p>Desenvolvido por: Filipe Bernardo. 2023.</p>
+    </footer>
+    <script src="cep.js"></script>
+</body>
+
+</html>
