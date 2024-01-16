@@ -87,7 +87,7 @@ nav {
 }
 
 #subtitulo {
-    font-family: "Quicksand", sans-serif;
+    font-family: "Alexandria", sans-serif;
     margin-top: 1em;
 }
 
@@ -129,6 +129,7 @@ main {
 .container__field--input {
     padding: 10px;
     font-size: 1rem;
+    font-weight: 300;
     border-radius: 8px;
     background: var(--form-field-bg-color);
     border: var(--form-field-border);
