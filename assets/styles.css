@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800&display=swap');
 :root {
     --nav-bg-color: rgba(0, 0, 0, 0.6);
     --text-color: #fff;
@@ -21,7 +21,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Raleway", sans-serif;
+    font-family: 'Alexandria', sans-serif;
     box-sizing: border-box;
 }
 
@@ -85,7 +85,7 @@ nav {
 }
 
 #subtitulo {
-    font-family: "Quicksand", sans-serif;
+    font-family: 'Alexandria', sans-serif;
     margin-top: 1em;
 }
 
@@ -126,7 +126,7 @@ main {
 
 .container__field--input {
     padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Alexandria', sans-serif;
     font-size: 1rem;
     border-radius: 8px;
     background: var(--form-field-bg-color);
