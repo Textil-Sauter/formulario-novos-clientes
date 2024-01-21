@@ -7,7 +7,7 @@
     --text-color: #fff;
     --link-color: #9e86ff;
     --btn-link-bg-color: #fff;
-    --btn-bg-color-gradient: linear-gradient(45deg, transparent 0%, #9b34ef 35%, #490cb0 65%, transparent 99%);
+    --btn-bg-color-gradient: linear-gradient(45deg, transparent 0%, #270716 35%, #521131 65%, transparent 99%);
     --btn-link-bg-color: #9e86ff;
     --btn-link-color: #000;
     --secondary-color: #ff00e5;
@@ -29,7 +29,7 @@
 
 body {
     position: relative;
-    background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
+    background: linear-gradient(-45deg, #521131, #0f0f10, #270716);
     background-size: 400% 400%;
     animation: gradient 10s ease infinite alternate;
     color: white;
