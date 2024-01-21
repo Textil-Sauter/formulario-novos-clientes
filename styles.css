@@ -7,7 +7,7 @@
     --text-color: #fff;
     --link-color: #9e86ff;
     --btn-link-bg-color: #fff;
-    --btn-bg-color-gradient: linear-gradient(45deg, transparent 0%, #521131 35%, #270716 65%, transparent 99%);
+    --btn-bg-color-gradient: linear-gradient(45deg, transparent 0%, rgb(82, 17, 49) 35%, rgb(39, 7, 22) 65%, transparent 99%);
     --btn-link-bg-color: #9e86ff;
     --btn-link-color: #000;
     --secondary-color: #ff00e5;
