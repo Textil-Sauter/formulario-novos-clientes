@@ -26,8 +26,8 @@ function popularForm(resposta) {
     estado.value = resposta.uf;
 }
 
-let cep = document.querySelector('#cep_entrega');
-let logradouro = document.querySelector('#endereco_entrega');
+let cepEntrega = document.querySelector('#cep_entrega');
+let logradouroEntrega = document.querySelector('#endereco_entrega');
 
 cep.addEventListener('blur', function(e) {
     let cep = e.target.value;
@@ -41,5 +41,5 @@ function popularForm(resposta) {
         alert('CEP não encontrado');
         return;
     }
-    logradouro.value = resposta.endereco_entrega;    
+    logradouroEntrega.value = resposta.logradouroEntrega;    
 }
