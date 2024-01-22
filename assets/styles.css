@@ -154,11 +154,11 @@ textarea {
 }
 
 input:focus {
-    border: 3px solid violet;
+    border: 3px solid #9a1c57;
 }
 
 textarea:focus {
-    border: 3px solid violet;
+    border: 3px solid #9a1c57;
 }
 
 option{    
@@ -223,12 +223,12 @@ footer {
 }
 
 input[type="radio"]:checked+label {
-    color: #270716;
+    color: #9a1c57;
     font-weight: bold;
 }
 
 input{
-    accent-color: #521131;
+    accent-color: #9a1c57;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
