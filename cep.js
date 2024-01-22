@@ -25,3 +25,21 @@ function popularForm(resposta) {
     localidade.value = resposta.localidade;
     estado.value = resposta.uf;
 }
+
+let cep = document.querySelector('#cep_entrega');
+let logradouro = document.querySelector('#endereco_entrega');
+
+cep.addEventListener('blur', function(e) {
+    let cep = e.target.value;
+    let script = document.createElement('script');
+    script.src = 'https://viacep.com.br/ws/'+cep+'/json/?callback=popularForm';
+    document.body.appendChild(script);
+});
+
+function popularForm(resposta) {
+    if("erro" in resposta){
+        alert('CEP não encontrado');
+        return;
+    }
+    logradouro.value = resposta.endereco_entrega;    
+}
