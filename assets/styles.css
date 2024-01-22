@@ -2,15 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800&display=swap');
 :root {
-    --nav-bg-color: rgba(0, 0, 0, 0.6);
-    --text-color: #fff;
-    --link-color: #9e86ff;
+    --nav-bg-color: rgba(0, 0, 0, 0.8);
+    --text-color: #f5f5f5;
+    --link-color: rgb(39, 7, 22);
     --btn-link-bg-color: #fff;
     --btn-bg-color-gradient: linear-gradient(45deg, transparent 0%, rgb(82, 17, 49) 35%, rgb(39, 7, 22) 65%, transparent 99%);
-    --btn-link-bg-color: #9e86ff;
+    --btn-link-bg-color: #e0e0e0;
     --btn-link-color: #000;
-    --secondary-color: linear-gradient(#858688 0%, #e0e0e0 50%, #f5f5f5 80%);
-    --tertiary-color: #3c0a6e;
+    --secondary-color: #e0e0e0;
+    --tertiary-color: rgb(82, 17, 49);
     --form-field-bg-color: rgba(0, 0, 0, 0.2);
     --form-field-border: 1px solid rgba(255, 255, 255, 0.7);
     --form-field-placeholder: rgba(255, 255, 255, 0.7);
@@ -27,7 +27,7 @@
 
 body {
     position: relative;
-    background: linear-gradient(-45deg, #4f1234, #0f0f10, #290614);
+    background: linear-gradient(-45deg, #521131, #0f0f10, #270716);
     background-size: 400% 400%;
     animation: gradient 10s ease infinite alternate;
     color: #f5f5f5;
